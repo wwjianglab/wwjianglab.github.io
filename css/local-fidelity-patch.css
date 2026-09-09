@@ -487,7 +487,7 @@
    ========================================================= */
 
 #COOPERATIONS {
-    --collaboration-image-width: 180px; /* <-- CHANGE IMAGE SIZE HERE */
+    --collaboration-image-width: 270px; /* target size from reference screenshot */
 }
 
 /* Desktop: image on the left, text on the right. */
@@ -495,7 +495,7 @@
     display: grid;
     grid-template-columns: var(--collaboration-image-width) minmax(0, 1fr);
     align-items: center;
-    column-gap: 34px;
+    column-gap: 50px;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
