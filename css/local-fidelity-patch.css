@@ -582,3 +582,39 @@
         object-fit: contain !important;
     }
 }
+
+
+/* =========================================================
+   MOBILE HERO + HEADER LOGO FIX
+   Use Divas on mobile and force all hero images to keep their
+   intrinsic aspect ratio. Also use the same updated logo file
+   as the desktop header.
+   ========================================================= */
+@media screen and (max-width: 768px) {
+    #Introduction .divas-slider,
+    #Introduction .divas-slider-container,
+    #Introduction .divas-slide {
+        height: auto !important;
+    }
+
+    #Introduction .divas-slide img {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        max-width: 100% !important;
+        object-fit: contain !important;
+    }
+
+    /* The old Skitter block is no longer used on mobile. */
+    #Introduction .box_skitter {
+        display: none !important;
+    }
+
+    .right_box .logo .l_2 img {
+        display: block;
+        width: auto !important;
+        max-width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+}
