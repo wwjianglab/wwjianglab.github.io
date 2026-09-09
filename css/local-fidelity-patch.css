@@ -487,7 +487,7 @@
    ========================================================= */
 
 #COOPERATIONS {
-    --collaboration-image-width: 270px; /* target size from reference screenshot */
+    --collaboration-image-width: 140px; /* compact size matching the reference layout */
 }
 
 /* Desktop: image on the left, text on the right. */
@@ -495,7 +495,7 @@
     display: grid;
     grid-template-columns: var(--collaboration-image-width) minmax(0, 1fr);
     align-items: center;
-    column-gap: 50px;
+    column-gap: 42px;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -505,7 +505,8 @@
 
 /* Left edge aligns with the PI portrait; image size is controlled above. */
 #COOPERATIONS .collaboration-azeroth-image {
-    width: var(--collaboration-image-width);
+    width: var(--collaboration-image-width) !important;
+    max-width: var(--collaboration-image-width) !important;
     margin: 0;
     display: flex;
     justify-content: flex-end;
@@ -514,9 +515,9 @@
 
 #COOPERATIONS .collaboration-azeroth-image img {
     display: block;
-    width: var(--collaboration-image-width);
-    max-width: 100%;
-    height: auto;
+    width: var(--collaboration-image-width) !important;
+    max-width: var(--collaboration-image-width) !important;
+    height: auto !important;
     margin: 0;
     border: 0;
 }
