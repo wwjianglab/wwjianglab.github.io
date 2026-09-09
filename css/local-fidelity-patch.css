@@ -352,9 +352,82 @@
     }
 }
 
-#ACTIVITIES .itext p {
-    font-size: 18px !important;
-    line-height: 1.6 !important;
+/* =========================================================
+   ACTIVITIES
+   Same left-image / right-text layout as Collaborations.
+   ========================================================= */
+
+#ACTIVITIES {
+    --activity-image-width: 140px;
+}
+
+#ACTIVITIES .activity-row {
+    display: grid;
+    grid-template-columns: var(--activity-image-width) minmax(0, 1fr);
+    align-items: center;
+    column-gap: 42px;
+    width: 100%;
+    margin: 0;
+    padding: 28px 0 32px;
+    box-sizing: border-box;
+}
+
+#ACTIVITIES .activity-molten-image {
+    width: var(--activity-image-width);
+    max-width: var(--activity-image-width);
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#ACTIVITIES .activity-molten-image img {
+    display: block;
+    width: var(--activity-image-width) !important;
+    max-width: var(--activity-image-width) !important;
+    height: auto !important;
+    margin: 0;
+    border: 0;
+}
+
+#ACTIVITIES .activity-text {
+    min-width: 0;
+}
+
+#ACTIVITIES .activity-text p {
+    margin: 0;
+    font-size: 20px !important;
+    line-height: 1.75 !important;
+    color: #444;
+}
+
+@media screen and (max-width: 768px) {
+    #ACTIVITIES .activity-row {
+        grid-template-columns: 1fr;
+        width: 100%;
+        row-gap: 20px;
+        padding: 22px 0 26px;
+    }
+
+    #ACTIVITIES .activity-molten-image {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    #ACTIVITIES .activity-molten-image img {
+        width: min(var(--activity-image-width), 82vw) !important;
+    }
+
+    #ACTIVITIES .activity-text {
+        width: 100%;
+    }
+
+    #ACTIVITIES .activity-text p {
+        font-size: 18px !important;
+        line-height: 1.65 !important;
+        text-align: left;
+    }
 }
 
 /* =========================================================
@@ -576,6 +649,7 @@
    ========================================================= */
 @media screen and (max-width: 768px) {
     #RESEARCH .pic img,
+    #ACTIVITIES .activity-molten-image img,
     #COOPERATIONS .collaboration-azeroth-image img,
     #MEMBERS .pi-photo img {
         height: auto !important;
