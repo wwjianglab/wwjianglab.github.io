@@ -566,3 +566,19 @@
     }
 }
 
+
+
+/* =========================================================
+   MOBILE IMAGE ASPECT-RATIO SAFETY
+   Prevent responsive content images from being stretched.
+   The mobile hero slider itself uses the 2000:786 base ratio
+   defined in index.html before Skitter applies a uniform scale.
+   ========================================================= */
+@media screen and (max-width: 768px) {
+    #RESEARCH .pic img,
+    #COOPERATIONS .collaboration-azeroth-image img,
+    #MEMBERS .pi-photo img {
+        height: auto !important;
+        object-fit: contain !important;
+    }
+}

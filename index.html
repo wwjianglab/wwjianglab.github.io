@@ -16,7 +16,7 @@
 <link href="js/slider/css/divas_free_skin.css" rel="stylesheet"/>
 <link href="css/style.css" rel="stylesheet"/>
 <link href="css/mobile.css" rel="stylesheet"/>
-<link href="css/local-fidelity-patch.css?v=20260909-3" rel="stylesheet"/>
+<link href="css/local-fidelity-patch.css?v=20260909-4" rel="stylesheet"/>
 <link href="_sitegray/_sitegray_d.css" rel="stylesheet" type="text/css"/>
 <script language="javascript" src="_sitegray/_sitegray.js"></script>
 <link href="index.vsb.css" rel="stylesheet" type="text/css"/>
@@ -250,7 +250,7 @@
         
         .box_skitter_large{
             width:816px!important;
-            height:389px!important;}
+            height:320.688px!important;} /* 2000:786 source-image aspect ratio */
         
         .skitter-clean .info_slide_dots{
             display:none !important;}
@@ -590,7 +590,7 @@
             var skitter_right_box_width = $(".right_box").width();// Page width
             var skitter_width = $(".box_skitter_large").width();// Original slider width
             var skitter_height = $(".box_skitter_large").height();// Original slider height
-            var skitter_whb = skitter_width / skitter_height ;//(2:1)
+            var skitter_whb = skitter_width / skitter_height ;// keep the source-image aspect ratio (2000:786)
             var skitter_bl = skitter_right_box_width / skitter_width ;//
             var skitter_left = (skitter_width-skitter_bl * skitter_width)/2;//
             var skitter_top = (skitter_height-skitter_height * skitter_bl)/2;//
