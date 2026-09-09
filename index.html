@@ -66,6 +66,7 @@
   #PUBLICATIONS .reference-list li{font-size:15px;line-height:1.58;margin-bottom:11px;}
 }
 </style>
+
 </head>
 <body>
 <div class="new-box">
@@ -387,7 +388,19 @@
 
 </div>
 <!-- EDIT HERE 11: COLLABORATIONS SECTION -->
-<div class="text-box honored-students" id="COOPERATIONS"><div class="tb_title">Collaborations</div><div class="tb_sub"><div class="itext"><p>We welcome motivated fellow adventurers interested in computational materials science and atomistic simulations—exploring research is much like exploring Azeroth, filled with unknowns, challenges, and discoveries.</p></div></div></div>
+<div class="text-box honored-students" id="COOPERATIONS">
+<div class="tb_title">Collaborations</div>
+<div class="tb_sub">
+<div class="collaboration-row">
+<div class="collaboration-azeroth-image">
+    <img src="images/custom/collaboration-azeroth.png" alt="Azeroth-inspired collaboration emblem"/>
+</div>
+<div class="collaboration-text">
+    <p>We welcome motivated fellow adventurers interested in computational materials science and atomistic simulations—exploring research is much like exploring Azeroth, filled with unknowns, challenges, and discoveries.</p>
+</div>
+</div>
+</div>
+</div>
 <script language="javascript" src="./system/resource/js/ajax.js"></script>
 <script>function seeContenta25(contentid,size,displayid){	document.getElementById(contentid).innerHTML = '[';	for(var i=0;i<=size;i++){		var allcontentid = contentid+(i+1);		if(allcontentid==displayid){			document.getElementById(contentid).innerHTML += " <span id='"+allcontentid+"' name='"+allcontentid+"'  >"+(i+1)+"</span> ";			document.getElementById(displayid).style.display = 'block';		}else{			document.getElementById(contentid).innerHTML += " <span style='cursor:pointer' id='"+allcontentid+"' name='"+allcontentid+"' onclick=seeContenta25('"+contentid+"','"+size+"','"+allcontentid+"')  >"+(i+1)+"</span> ";			document.getElementById(allcontentid).style.display = 'none';		}	}	document.getElementById(contentid).innerHTML += ']';}</script>
 

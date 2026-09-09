@@ -479,3 +479,89 @@
     }
 }
 
+/* =========================================================
+   COLLABORATIONS
+   Layout is kept here so index HTML contains only the content.
+   To resize the Azeroth image, change ONLY --collaboration-image-width.
+   The collaboration artwork is left-aligned with the PI portrait.
+   ========================================================= */
+
+#COOPERATIONS {
+    --collaboration-image-width: 180px; /* <-- CHANGE IMAGE SIZE HERE */
+}
+
+/* Desktop: image on the left, text on the right. */
+#COOPERATIONS .collaboration-row {
+    display: grid;
+    grid-template-columns: var(--collaboration-image-width) minmax(0, 1fr);
+    align-items: center;
+    column-gap: 34px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 28px 0 32px;
+    box-sizing: border-box;
+}
+
+/* Left edge aligns with the PI portrait; image size is controlled above. */
+#COOPERATIONS .collaboration-azeroth-image {
+    width: var(--collaboration-image-width);
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#COOPERATIONS .collaboration-azeroth-image img {
+    display: block;
+    width: var(--collaboration-image-width);
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    border: 0;
+}
+
+#COOPERATIONS .collaboration-text {
+    min-width: 0;
+}
+
+/* Natural wrapping: no forced line break after the em dash. */
+#COOPERATIONS .collaboration-text p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.75;
+    color: #444;
+    white-space: normal;
+}
+
+/* Mobile: stack image and text and remove the desktop indent. */
+@media screen and (max-width: 768px) {
+    #COOPERATIONS .collaboration-row {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        row-gap: 20px;
+        padding: 22px 0 26px;
+    }
+
+    #COOPERATIONS .collaboration-azeroth-image {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #COOPERATIONS .collaboration-azeroth-image img {
+        width: min(var(--collaboration-image-width), 82vw);
+    }
+
+    #COOPERATIONS .collaboration-text {
+        width: 100%;
+    }
+
+    #COOPERATIONS .collaboration-text p {
+        font-size: 18px;
+        line-height: 1.65;
+        white-space: normal;
+    }
+}
+
