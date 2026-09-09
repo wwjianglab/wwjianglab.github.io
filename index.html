@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<!-- EDIT HERE 01: PI NAME / SEO -->
+<meta content="Wenwu Jiang" name="Author"/>
+<meta content="The Lab of Atomic-Scale Thermophysics and Mechanics (LATM) at the University of Science and Technology of China, led by Wenwu Jiang." name="Description"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport"/>
+<title>LATM | Lab of Atomic-Scale Thermophysics and Mechanics | USTC</title><meta content="1" name="pageType"/>
+<meta content="LATM | Lab of Atomic-Scale Thermophysics and Mechanics | USTC" name="pageTitle"/>
+<meta content="LATM, atomic-scale thermophysics and mechanics, machine-learning interatomic potentials, thermal transport, interfacial friction, USTC" name="keywords"/>
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<link href="css/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet"/>
+<link href="js/slider/css/divas_free_skin.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/mobile.css" rel="stylesheet"/>
+<link href="css/local-fidelity-patch.css" rel="stylesheet"/>
+<link href="_sitegray/_sitegray_d.css" rel="stylesheet" type="text/css"/>
+<script language="javascript" src="_sitegray/_sitegray.js"></script>
+<link href="index.vsb.css" rel="stylesheet" type="text/css"/>
+<script src="./system/resource/js/counter.js" type="text/javascript"></script>
+<script type="text/javascript">_jsq_(1033,'/index.jsp',-1,1609604809)</script>
+
+<style id="selected-publications-style">
+/* Publications: text-only, grouped by research direction */
+#PUBLICATIONS .selected-publications{padding-top:0;}
+#PUBLICATIONS .research-direction{padding:22px 0 18px;border-bottom:1px solid #ececec;}
+#PUBLICATIONS .research-direction:last-child{border-bottom:0;}
+#PUBLICATIONS .research-direction h3{margin:0 0 14px;color:#005b7f;font-size:21px;line-height:1.35;font-weight:700;}
+#PUBLICATIONS .reference-list{margin:0;padding-left:25px;}
+#PUBLICATIONS .reference-list li{margin:0 0 12px;padding-left:5px;color:#3f3f3f;font-size:16px;line-height:1.62;}
+#PUBLICATIONS .reference-list li:last-child{margin-bottom:0;}
+#PUBLICATIONS .reference-list .ref-title{color:#252525;}
+#PUBLICATIONS .reference-list em{font-style:italic;}
+#PUBLICATIONS .reference-list a{color:#005b7f;text-decoration:none;overflow-wrap:anywhere;}
+#PUBLICATIONS .reference-list a:hover{text-decoration:underline;}
+#PUBLICATIONS .reference-list strong.author{font-weight:700;color:#222;}
+#PUBLICATIONS .reference-list .author-mark{
+  margin-left:1px;
+  font-size:1em;
+  line-height:inherit;
+  vertical-align:baseline;
+  color:#000;
+  font-weight:400;
+}
+#PUBLICATIONS .publication-role-note{
+  margin:0 0 8px;
+  color:#636262;
+  font-size:14px;
+  line-height:1.5;
+}
+#PUBLICATIONS .publication-role-note .author-mark{
+  margin-left:0;
+  font-size:1em;
+  line-height:inherit;
+  vertical-align:baseline;
+  color:#000;
+  font-weight:400;
+}
+@media (max-width:768px){
+  #PUBLICATIONS .research-direction{padding:18px 0 14px;}
+  #PUBLICATIONS .research-direction h3{font-size:19px;}
+  #PUBLICATIONS .reference-list{padding-left:22px;}
+  #PUBLICATIONS .reference-list li{font-size:15px;line-height:1.58;margin-bottom:11px;}
+}
+</style>
+</head>
+<body>
+<div class="new-box">
+<div class="new-header clearfix" style="display:none;">
+<!-- EDIT HERE 02: HEADER LOGO IMAGE: images/new-logo.png -->
+<div class="new-logo"><a href="index.html"><img src="images/new-logo.png"/></a></div>
+<div class="new-nav">
+<div class="new-operate">
+<ul class="clearfix"><script language="javascript" src="./system/resource/js/dynclicks.js"></script><script language="javascript" src="./system/resource/js/openlink.js"></script><li class="li1" id="searchgo"><a href="javascript:;">Search</a></li>
+<li class="li2"><a href="#CONTACT">E-mail</a></li>
+<li class="li3"><a href="https://en.ustc.edu.cn/" target="_blank">USTC</a></li>
+</ul>
+<div class="left_box top-nav-box">
+<div class="group">
+<div class="t1">Wenwu Jiang</div>
+<div class="t2">Group</div>
+</div>
+<div class="menu cl" style="display:none;">
+<ul class="clearfix">
+<li>
+<a data-href="INTRODUCTION.htm" data-id="INTRODUCTION" href="javascript:;">
+<span>INTRODUCTION</span>
+</a>
+</li>
+<li>
+<a data-href="publications_piclist.jsp?urltype=tree.TreeTempUrl&amp;wbtreeid=1003" data-id="RESEARCH" href="javascript:;">
+<span>RESEARCH</span>
+</a>
+</li>
+<li>
+<a data-href="publications_list.jsp?urltype=tree.TreeTempUrl&amp;wbtreeid=1004" data-id="PUBLICATIONS" href="javascript:;">
+<span>PUBLICATIONS</span>
+</a>
+<li style="display:none;">
+<a data-href="list1.jsp?urltype=tree.TreeTempUrl&amp;wbtreeid=1015" data-id="ACTIVITIES" href="javascript:;">
+<span>ACTIVITIES</span>
+</a>
+</li>
+<li>
+<a data-href="#" data-id="MEMBERS" href="javascript:;">
+<span>MEMBERS</span>
+</a>
+</li>
+<li style="display:none;">
+<a data-href="COOPERATIONS.htm" data-id="COOPERATIONS" href="javascript:;">
+<span>COLLABORATIONS</span>
+</a>
+</li>
+<li>
+<a data-href="CONTACT.htm" data-id="CONTACT" href="javascript:;">
+<span>CONTACT</span>
+</a>
+</li>
+</ul>
+<div class="more mtab"></div>
+</div>
+</div>
+<script type="text/javascript">
+    // Top navigation width is controlled by CSS.
+    // Keeping this function avoids breaking existing resize hooks.
+    function setTopNavBody(){
+        $(".top-nav-box").css("width","");
+    }
+    setTopNavBody();
+</script>
+</div>
+</div>
+</div>
+<div class="new-banner" style="background:url(images/new-banner.svg) no-repeat;background-size:cover;display:none;">
+<div class="new-zs">
+<div class="img"><a href="index.html"><img src="images/new-tu.png"/></a></div>
+<p class="txt"> <a href="index.html"><img src="images/new-txt.png"/></a>
+</p>
+<!-- EDIT HERE 03: HERO SUBTITLE -->
+<p class="txt2">Dr. Wenwu Jiang's group at USTC, Hefei, China</p>
+</div>
+</div>
+<div class="container">
+<div class="fastlink_temp hide">
+<ul><li><a href="#RESEARCH">Research</a></li><li><a href="#PUBLICATIONS">Publications</a></li><li><a href="#COOPERATIONS">Collaborations</a></li><li><a href="https://en.ustc.edu.cn/" target="_blank">USTC</a></li></ul>
+</div>
+<div class="left_box side-menu-box hides">
+<div class="group">
+<div class="t1">Wenwu Jiang</div>
+</div>
+<div class="menu cl" style="display:none;">
+<ul>
+<li>
+<a data-href="INTRODUCTION.htm" data-id="INTRODUCTION" href="javascript:;">
+<i class="fa fa-themeisle"></i>
+<span>INTRODUCTION</span>
+</a>
+</li>
+<li>
+<a data-href="publications_piclist.jsp?urltype=tree.TreeTempUrl&amp;wbtreeid=1003" data-id="RESEARCH" href="javascript:;">
+<i class="fa fa-bomb"></i>
+<span>RESEARCH</span>
+</a>
+</li>
+<li>
+<a data-href="publications_list.jsp?urltype=tree.TreeTempUrl&amp;wbtreeid=1004" data-id="PUBLICATIONS" href="javascript:;">
+<i class="fa fa-stack-overflow"></i>
+<span>PUBLICATIONS</span>
+</a>
+</li>
+<li>
+<a data-href="list1.jsp?urltype=tree.TreeTempUrl&amp;wbtreeid=1015" data-id="ACTIVITIES" href="javascript:;">
+<i class="fa fa-slideshare"></i>
+<span>ACTIVITIES</span>
+</a>
+</li>
+<li>
+<a data-href="#" data-id="MEMBERS" href="javascript:;">
+<i class="fa fa-group"></i>
+<span>MEMBERS</span>
+</a>
+</li>
+<li>
+<a data-href="COOPERATIONS.htm" data-id="COOPERATIONS" href="javascript:;">
+<i class="fa fa-odnoklassniki"></i>
+<span>COLLABORATIONS</span>
+</a>
+</li>
+<li>
+<a data-href="CONTACT.htm" data-id="CONTACT" href="javascript:;">
+<i class="fa fa-send"></i>
+<span>CONTACT</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+    // Side-menu width/position are controlled by css/local-fidelity-patch.css.
+    // This function is retained for compatibility with the resize hook.
+    function setSideMenuBody(){
+        $(".side-menu-box").css("width","");
+    }
+    setSideMenuBody();
+</script>
+<div class="right_box">
+<div class="header cl">
+ logo"-logo" 
+<div class="logo cl">
+<div class="l_1"><a href="index.html"><img src="images/logo1.jpg"/></a></div>
+<div class="l_2"><a href="index.html"><img src="images/fff4.png"/></a></div>
+</div>
+<div class="link">
+<a href="javascript:;" id="searchgo" style="background:url(images/search_icon.png) center right no-repeat;padding-right: 19px;">
+            Search
+        </a>
+<a href="#CONTACT" style="background:url(images/mail.png) center right no-repeat;">
+            E-mail
+        </a>
+<a href="https://en.ustc.edu.cn/" style="background:url(images/gq.png) center right no-repeat;padding-right: 25px;" target="_blank">USTC</a>
+</div>
+<div class="menubar">
+<i class="fa fa-bars mtab pull-right"></i>
+</div>
+<div class="fastlink cl"></div>
+</div>
+<div class="header2" id="INTRODUCTION"></div>
+<script language="javascript" src="./system/resource/js/centerCutImg.js"></script><script language="javascript" src="./system/resource/js/ajax.js"></script>
+<div class="banner" id="Introduction">
+<div class="divas-slider" id="slider">
+<ul class="divas-slide-container"><li class="divas-slide"><a href="#RESEARCH"><img alt="Machine-Learning Interatomic Potentials" data-src="images/custom/ml-potentials.jpg" data-title="&lt;h1&gt;Machine-Learning Interatomic Potentials&lt;/h1&gt;" src="js/slider/placeholder.gif"/></a></li><li class="divas-slide"><a href="#RESEARCH"><img alt="Phonon Thermal Transport" data-src="images/custom/thermal-transport.jpg" data-title="&lt;h1&gt;Phonon Thermal Transport&lt;/h1&gt;" src="js/slider/placeholder.gif"/></a></li><li class="divas-slide"><a href="#RESEARCH"><img alt="Atomic-Scale Interfacial Friction" data-src="images/custom/interfacial-friction.jpg" data-title="&lt;h1&gt;Atomic-Scale Interfacial Friction&lt;/h1&gt;" src="js/slider/placeholder.gif"/></a></li></ul>
+<div class="divas-navigation">
+<span class="divas-prev"> </span>
+<span class="divas-next"> </span>
+</div>
+<div class="divas-controls">
+<span class="divas-start"><i class="fa fa-play"></i></span>
+<span class="divas-stop"><i class="fa fa-pause"></i></span>
+</div>
+</div>
+<div class="box_skitter box_skitter_large myskitter">
+<ul><li><img alt="Machine-Learning Interatomic Potentials" class="circles" src="images/custom/ml-potentials.jpg"/><div class="label_text"><a href="#RESEARCH" style="color:white;"><p style="padding-bottom:0;font-size:32px;">Machine-Learning Interatomic Potentials</p></a></div></li><li><img alt="Phonon Thermal Transport" class="circles" src="images/custom/thermal-transport.jpg"/><div class="label_text"><a href="#RESEARCH" style="color:white;"><p style="padding-bottom:0;font-size:32px;">Phonon Thermal Transport</p></a></div></li><li><img alt="Atomic-Scale Interfacial Friction" class="circles" src="images/custom/interfacial-friction.jpg"/><div class="label_text"><a href="#RESEARCH" style="color:white;"><p style="padding-bottom:0;font-size:32px;">Atomic-Scale Interfacial Friction</p></a></div></li></ul>
+</div>
+<style>
+    
+        .box_skitter{
+            display:none;}
+        
+        .box_skitter_large{
+            width:816px!important;
+            height:389px!important;}
+        
+        .skitter-clean .info_slide_dots{
+            display:none !important;}
+        
+        .box_skitter .label_skitter{
+            padding: 5px 5px 10px 5px;}
+        
+        .box_skitter .label_skitter p{
+            font-family:'calibri'!important;}
+        
+    </style>
+</div>
+<script id="slider_tmep1" type="text/html"><div id="slider" class="divas-slider"><ul class="divas-slide-container"><li class="divas-slide"><a href="#RESEARCH"><img src="js/slider/placeholder.gif" alt="Machine-Learning Interatomic Potentials" data-src="images/custom/ml-potentials.jpg" data-title="<h1>Machine-Learning Interatomic Potentials</h1>" /></a></li><li class="divas-slide"><a href="#RESEARCH"><img src="js/slider/placeholder.gif" alt="Phonon Thermal Transport" data-src="images/custom/thermal-transport.jpg" data-title="<h1>Phonon Thermal Transport</h1>" /></a></li><li class="divas-slide"><a href="#RESEARCH"><img src="js/slider/placeholder.gif" alt="Atomic-Scale Interfacial Friction" data-src="images/custom/interfacial-friction.jpg" data-title="<h1>Atomic-Scale Interfacial Friction</h1>" /></a></li></ul><div class="divas-navigation"><span class="divas-prev">&nbsp;</span><span class="divas-next">&nbsp;</span></div><div class="divas-controls"><span class="divas-start"><i class="fa fa-play"></i></span><span class="divas-stop"><i class="fa fa-pause"></i></span></div></div></script>
+<link href="js/skitter/css/skitter.styles.css" media="all" rel="stylesheet" type="text/css"/>
+<script id="slider_tmep2" type="text/html"><div class="box_skitter box_skitter_large myskitter"><ul><li><img src="images/custom/ml-potentials.jpg" class="circles" /><div class="label_text"><a href="#RESEARCH" style="color:white;"><p style="padding-bottom:0;font-size:32px;">Machine-Learning Interatomic Potentials</p></a></div></li><li><img src="images/custom/thermal-transport.jpg" class="circles" /><div class="label_text"><a href="#RESEARCH" style="color:white;"><p style="padding-bottom:0;font-size:32px;">Phonon Thermal Transport</p></a></div></li><li><img src="images/custom/interfacial-friction.jpg" class="circles" /><div class="label_text"><a href="#RESEARCH" style="color:white;"><p style="padding-bottom:0;font-size:32px;">Atomic-Scale Interfacial Friction</p></a></div></li></ul></div></script>
+<div class="con">
+<script language="javascript" src="./system/resource/js/news/mp4video.js"></script>
+<!-- EDIT HERE 04: INTRODUCTION SUMMARY -->
+<div class="group">
+<div class="title"><p>A group led by Dr. Wenwu Jiang at USTC, Hefei, China.</p></div>
+<div class="g-list">
+<ul><li><i class="fa fa-check-circle"></i>We develop accurate and efficient machine-learning interatomic potentials for large-scale atomistic simulations.</li><li><i class="fa fa-check-circle"></i>We investigate phonon thermal transport in low-dimensional materials.</li><li><i class="fa fa-check-circle"></i>We study interfacial friction in van der Waals materials.</li></ul>
+</div>
+</div>
+   
+<!-- EDIT HERE 05: RESEARCH SECTION -->
+<div class="text-box research" id="RESEARCH">
+<div class="tb_title">Research</div>
+<div class="pic"><img alt="Research overview" src="images/custom/research-overview.png"/></div>
+<div class="content"><p class="vsbcontent_start">Our research focuses on atomistic descriptions of coupled mechanical and thermal phenomena. We aim to establish predictive links between interatomic interactions, phonon transport, and interfacial motion by combining first-principles calculations, machine-learning potentials, and large-scale molecular dynamics simulations.</p><p>(1) Machine-learning interatomic potentials. We develop transferable and computationally efficient force fields trained on first-principles data.</p><p>(2) Thermal transport. We investigate phonon thermal transport in low-dimensional materials, including the effects of strain, defects, stacking, and moiré structures.</p><p>(3) Interfacial friction and mechanics. We study atomic-scale sliding, structural reconstruction, interfacial bonding, and the coupling between mechanical deformation and heat transport.</p></div>
+</div>
+<!-- EDIT HERE 06: PUBLICATIONS SECTION -->
+<div class="text-box publications" id="PUBLICATIONS">
+  <div class="tb_title">Publications</div>
+  <div class="tb_sub selected-publications">
+    <div class="tb_subtitle"><span>Selected Research</span></div>
+
+    <div class="publication-role-note"><span class="author-mark">#</span> Co-first author &nbsp;&nbsp; <span class="author-mark">*</span> Corresponding author</div>
+
+    <section class="research-direction" aria-labelledby="pub-methods">
+      <h3 id="pub-methods">Machine-Learning &amp; Interatomic Potentials</h3>
+      <ol class="reference-list">
+        <li><strong class="author">W. Jiang</strong><span class="author-mark">#</span>, H. Bu<span class="author-mark">#</span>, T. Liang<span class="author-mark">#</span>, P. Ying, Z. Fan, J. Xu, W. Ouyang<span class="author-mark">*</span>, <span class="ref-title">Accurate Modeling of Interfacial Thermal Transport in van der Waals Heterostructures via Hybrid Machine Learning and Registry-Dependent Potentials.</span> <em>J. Chem. Theory Comput.</em> <strong>22</strong> (9), 4699–4715 (2026). <a href="https://doi.org/10.1021/acs.jctc.5c01950" target="_blank" rel="noopener">https://doi.org/10.1021/acs.jctc.5c01950</a></li>
+        <li>H. Bu<span class="author-mark">#</span>, <strong class="author">W. Jiang</strong><span class="author-mark">#</span>, P. Ying<span class="author-mark">*</span>, T. Liang, Z. Fan, W. Ouyang<span class="author-mark">*</span>, <span class="ref-title">Modular Hybrid Machine Learning and Physics-Based Potentials for Scalable Modeling of van der Waals Heterostructures.</span> <em>J. Mech. Phys. Solids</em> <strong>210</strong>, 106540 (2026). <a href="https://doi.org/10.1016/j.jmps.2026.106540" target="_blank" rel="noopener">https://doi.org/10.1016/j.jmps.2026.106540</a></li>
+        <li><strong class="author">W. Jiang</strong><span class="author-mark">#</span>, R. Sofer<span class="author-mark">#</span>, X. Gao<span class="author-mark">#</span>, A. Tkatchenko, L. Kronik, W. Ouyang<span class="author-mark">*</span>, M. Urbakh<span class="author-mark">*</span>, O. Hod, <span class="ref-title">Anisotropic Interlayer Force Field for Group-VI Transition Metal Dichalcogenides.</span> <em>J. Phys. Chem. A</em> <strong>127</strong> (46), 9820–9830 (2023). <a href="https://doi.org/10.1021/acs.jpca.3c04540" target="_blank" rel="noopener">https://doi.org/10.1021/acs.jpca.3c04540</a></li>
+      </ol>
+    </section>
+
+    <section class="research-direction" aria-labelledby="pub-thermal">
+      <h3 id="pub-thermal">Phonon Thermal Transport</h3>
+      <ol class="reference-list">
+        <li><strong class="author">W. Jiang</strong><span class="author-mark">#</span>, T. Liang<span class="author-mark">#</span>, J. Xu<span class="author-mark">*</span>, W. Ouyang<span class="author-mark">*</span>, <span class="ref-title">Strain-Engineered Anisotropic Thermal Transport in Layered MoS<sub>2</sub> Structures.</span> <em>ACS Appl. Mater. Interfaces</em> <strong>17</strong> (23), 34833–34844 (2025). <a href="https://doi.org/10.1021/acsami.5c06264" target="_blank" rel="noopener">https://doi.org/10.1021/acsami.5c06264</a></li>
+        <li><strong class="author">W. Jiang</strong>, T. Liang, H. Bu, J. Xu, W. Ouyang<span class="author-mark">*</span>, <span class="ref-title">Moiré-Driven Interfacial Thermal Transport in Twisted Transition Metal Dichalcogenides.</span> <em>ACS Nano</em> <strong>19</strong> (17), 16287–16296 (2025). <a href="https://doi.org/10.1021/acsnano.4c12148" target="_blank" rel="noopener">https://doi.org/10.1021/acsnano.4c12148</a></li>
+        <li><strong class="author">W. Jiang</strong><span class="author-mark">#</span>, T. Liang<span class="author-mark">#</span>, J. Xu, W. Ouyang<span class="author-mark">*</span>, <span class="ref-title">Twist-Dependent Anisotropic Thermal Conductivity in Homogeneous MoS<sub>2</sub> Stacks.</span> <em>Int. J. Heat Mass Transf.</em> <strong>217</strong>, 124662 (2023). <a href="https://doi.org/10.1016/j.ijheatmasstransfer.2023.124662" target="_blank" rel="noopener">https://doi.org/10.1016/j.ijheatmasstransfer.2023.124662</a></li>
+      </ol>
+    </section>
+
+    <section class="research-direction" aria-labelledby="pub-friction">
+      <h3 id="pub-friction">Atomic-Scale Interfacial Friction</h3>
+      <ol class="reference-list">
+      </ol>
+    </section>
+  </div>
+</div>
+<!-- EDIT HERE 08: ACTIVITIES SECTION -->
+<div class="text-box activities" id="ACTIVITIES"><div class="tb_title">Activities</div><div class="tb_sub"><div class="tb_subtitle"><span>Group Activities</span></div><div class="itext"><p>Join us!</p></div></div></div>
+<!-- EDIT HERE 09: MEMBERS SECTION -->
+<div class="text-box group" id="MEMBERS">
+<div class="tb_title">Members</div>
+
+<div class="tb_sub">
+<div class="tb_subtitle"><span>Principal Investigator</span></div>
+
+<div class="pi-profile">
+<div class="pi-photo">
+<img src="images/people/wenwu-jiang.jpg" alt="Wenwu Jiang"/>
+</div>
+
+<div class="pi-info">
+<h3>Wenwu Jiang</h3>
+<div class="pi-education" style="margin: 6px 0 12px 0; line-height: 1.65;">
+    Bachelor's, Xiangtan University &nbsp;·&nbsp; Master's, Xiangtan University &nbsp;·&nbsp; Ph.D., Wuhan University &nbsp;·&nbsp; Postdoctoral Researcher, University of Science and Technology of China
+</div>
+<p><b>E-mail:</b> <a href="mailto:wwjiang96@ustc.edu.cn">wwjiang96@ustc.edu.cn</a></p>
+<p><b>Academic Profiles:</b> <a href="https://scholar.google.com/citations?user=CVWzldMAAAAJ&hl=en" target="_blank">Google Scholar</a> · <a href="https://orcid.org/0009-0007-7474-6226" target="_blank">ORCID</a> · <a href="https://www.researchgate.net/profile/Wenwu-Jiang" target="_blank">ResearchGate</a></p>
+</div>
+</div>
+</div>
+
+<!-- Publication roles: compact three-column list under PI profile -->
+<div class="publication-role-grid" aria-label="Publications by author contribution">
+
+<div class="publication-role-column">
+<h4>First Author</h4>
+<ul>
+<li><em>J. Chem. Theory Comput.</em>, 22 (9), 4699–4715, <strong>2026</strong>.</li>
+<li><em>Int. Commun. Heat Mass Transf.</em>, 170, 109935, <strong>2026</strong>.</li>
+<li><em>ACS Appl. Mater. Interfaces</em>, 17 (23), 34833, <strong>2025</strong>.</li>
+<li><em>ACS Nano</em>, 19 (17), 16287–16296, <strong>2025</strong>.</li>
+<li><em>J. Phys. Chem. C</em>, 129 (2), 1417–1427, <strong>2025</strong>.</li>
+<li><em>Int. J. Heat Mass Transf.</em>, 217, 124662, <strong>2023</strong>.</li>
+<li><em>J. Phys. Chem. A</em>, 127 (46), 9820–9830, <strong>2023</strong>.</li>
+<li><em>Nanotechnology</em>, 33 (42), 425601, <strong>2022</strong>.</li>
+<li><em>Appl. Clay Sci.</em>, 203, 106020, <strong>2021</strong>.</li>
+<li><em>Nanotechnology</em>, 31 (23), 235713, <strong>2020</strong>.</li>
+<li><em>Energy Technol.</em>, 8 (3), 1901262, <strong>2020</strong>.</li>
+</ul>
+</div>
+
+<div class="publication-role-column">
+<h4>Co-first Author</h4>
+<ul>
+<li><em>J. Mech. Phys. Solids</em>, 210, 106540, <strong>2026</strong>.</li>
+<li><em>J. Appl. Phys.</em>, 138 (7), 075101, <strong>2025</strong>.</li>
+<li><em>Nanotechnology</em>, 31 (43), 435701, <strong>2020</strong>.</li>
+</ul>
+</div>
+
+<div class="publication-role-column">
+<h4>Corresponding Author</h4>
+<ul>
+<li><em>Appl. Phys. Lett.</em>, 127 (14), 143101, <strong>2025</strong>.</li>
+<li><em>J. Appl. Phys.</em>, 137 (14), 144304, <strong>2025</strong>.</li>
+<li><em>J. Phys. D: Appl. Phys.</em>, 57 (10), 105303, <strong>2024</strong>.</li>
+</ul>
+</div>
+
+
+</div>
+
+<div class="tb_sub">
+<div class="tb_subtitle"><span>Open Positions</span></div>
+<div class="future-members"><p>We are recruiting.</p></div>
+</div>
+
+</div>
+<!-- EDIT HERE 11: COLLABORATIONS SECTION -->
+<div class="text-box honored-students" id="COOPERATIONS"><div class="tb_title">Collaborations</div><div class="tb_sub"><div class="itext"><p>We welcome motivated students and collaborators interested in computational materials science and atomistic simulations—exploring research is much like exploring Azeroth, filled with unknowns, challenges, and discoveries.</p></div></div></div>
+<script language="javascript" src="./system/resource/js/ajax.js"></script>
+<script>function seeContenta25(contentid,size,displayid){	document.getElementById(contentid).innerHTML = '[';	for(var i=0;i<=size;i++){		var allcontentid = contentid+(i+1);		if(allcontentid==displayid){			document.getElementById(contentid).innerHTML += " <span id='"+allcontentid+"' name='"+allcontentid+"'  >"+(i+1)+"</span> ";			document.getElementById(displayid).style.display = 'block';		}else{			document.getElementById(contentid).innerHTML += " <span style='cursor:pointer' id='"+allcontentid+"' name='"+allcontentid+"' onclick=seeContenta25('"+contentid+"','"+size+"','"+allcontentid+"')  >"+(i+1)+"</span> ";			document.getElementById(allcontentid).style.display = 'none';		}	}	document.getElementById(contentid).innerHTML += ']';}</script>
+
+
+<!-- EDIT HERE 13: CONTACT SECTION -->
+<div class="text-box contact" id="CONTACT"><div class="tb_title">Contact</div><div class="tb_sub"><div class="cl h20"></div><div class="itext"><p><b>Wenwu Jiang</b></p><p>Lab of Atomic-Scale Thermophysics and Mechanics (LATM)</p><p>University of Science and Technology of China (USTC)</p><p>Hefei, Anhui, China</p><p>E-mail: wwjiang96@ustc.edu.cn</p></div></div></div>
+
+<script language="javascript" src="_dwr/engine.js"></script><script language="javascript" src="_dwr/util.js"></script><script language="javascript" src="_dwr/interface/PageCounterDWR.js"></script>
+
+</div>
+</div>
+<div class="h20"></div>
+
+<script>
+    $(function(){
+        function getvisittimea246920(){       
+            PageCounterDWR.getVisittime('1609604809','1033','TOTAL_COUNTER','1293197','7',callbackdataa246920);
+        }
+        
+        function callbackdataa246920(data){
+            document.getElementById("a246920").innerHTML = data; 
+        }
+        getvisittimea246920();
+    });
+</script>
+</div>
+<div class="layer-con-box">
+<div class="layer-con">
+<p class="img"><img src="images/new-tu.png"/></p>
+<h3 class="txt"><a href="index.html">Lab of Atomic-Scale Thermophysics and Mechanics (LATM)</a></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<script language="javascript" src="./system/resource/js/base64.js"></script><script language="javascript" src="./system/resource/js/jquery/jquery-latest.min.js"></script><script language="javascript" src="./system/resource/vue/vue.js"></script><script language="javascript" src="./system/resource/vue/bluebird.min.js"></script><script language="javascript" src="./system/resource/vue/axios.js"></script><script language="javascript" src="./system/resource/vue/polyfill.js"></script><script language="javascript" src="./system/resource/vue/token.js"></script><link href="./system/resource/vue/static/element/index.css" rel="stylesheet" type="text/css"/><script language="javascript" src="./system/resource/vue/static/element/index.js"></script><script language="javascript" src="./system/resource/vue/static/public.js"></script><div class="mask"></div>
+<i class="fa fa-arrow-circle-up rolltop"></i>
+<div id="divu28"></div>
+<script id="htmlu28" type="text/html">
+    <div id="appu28" style="display: inline;">
+        <div v-if="!isError"   class="searchbox" >
+        
+         <input placeholder="Search keywords..." name="INTEXT" autocomplete=off v-model=query.keyWord @keyup.enter="onSubmit">
+        <i class="fa fa-search"  v-on:click="onSubmit()"></i>
+        
+
+        </div>
+        <div v-if="isError" style="color: #b30216; font-size:18px;text-align: center;padding:20px;">
+            Search is currently unavailable.
+        </div>
+    </div>
+</script>
+<script>
+    $("#divu28").html($("#htmlu28").text());
+</script>
+<script>
+    var appOwner = "1609604809";
+    var token = 'tourist';
+    var urlPrefix = "/aop_component/";
+
+    jQuery.support.cors = true;
+    $.ajaxSetup({
+        beforeSend: function (request, settings) {
+            request.setRequestHeader("Authorization", token);
+            request.setRequestHeader("owner", appOwner);
+        }
+    });
+
+    new Vue({
+        el: "#appu28",
+        data: function () {
+            return {
+                query: {
+                    keyWord: "",// Search keyword
+                    owner: appOwner,
+                    token: token,
+                    urlPrefix: urlPrefix,
+                    lang:"i18n_zh_CN"
+                },
+                isError: false
+            }
+        },
+        mounted: function () {
+            var _this = this;
+            // _this.init();
+        },
+        methods: {
+            init: function(){
+                $.ajax({
+                    url: "/aop_component//webber/search/test",
+                    type: "get",
+                    success: function (response) {
+                        if (response.code == "0000") {
+                        } else if (response.code == "220") {
+                            _this.isError = true;
+                            console.log(response);
+                        } else if (!response.code) {
+                            _this.isError = true;
+                            console.log(response);
+                        }
+                    },
+                    error: function (response) {
+                        _this.isError = true;
+                    }
+                });
+            },
+            onSubmit: function (e) {
+                var url = "/views/search/modules/resultpc/soso.html";
+                if ("10" == "1" || "10" == "2") {
+                    url = "" + url;
+                }
+                var _this = this;
+                var query = _this.query;
+                if (url.indexOf("?") > -1) {
+                    url = url.split("?")[0];
+                }
+                if (query.keyWord) {
+                    var query = new Base64().encode(JSON.stringify(query));
+                    window.open(url + "?query=" + query);
+                } else {
+                    alert("Please enter a search term.")
+                }
+            },
+        }
+    })
+</script></div>
+<script language="javascript" src="js/skitter/js/jquery.easing.js" type="text/javascript"></script>
+<script language="javascript" src="js/skitter/js/jquery.skitter.min.js" type="text/javascript"></script>
+<script src="js/jquery.SuperSlide.js" type="text/javascript"></script>
+<script src="js/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="js/slider/js/jquery.divas.js" type="text/javascript"></script>
+<script>
+    $("#searchgo").click(function(){
+        $(".searchbox").show();
+        $(".mask").show();
+    });
+    
+    $(".searchbox i").click(function(){
+        $(this).parents("form").submit();
+    });
+
+    var window_width = $(window).width();
+    var container_width = $(".container").width();
+    var search_width = $(".searchbox").width();
+    var cha1 = (window_width-container_width)/2;
+    var cha2 = (container_width-search_width)/2;
+    var cha3 = cha1+cha2;
+    $(".searchbox").css({"left":cha3 +"px"});
+    
+    String.prototype.trim　= function()       
+    {              
+        var t = this.replace(/(^\s*)|(\s*$)/g, "");     
+        return t.replace(/(^　*)|(　*$)/g, "");     
+    }
+    function subsearchdataa246900a()
+    { 
+        if(document.a246900a.INTEXT.value.trim()=="")
+        {
+             alert("Please input query key words!");
+             return false;
+        }
+        if(checkDataa246900a(document.a246900a))
+        {
+           return true;  
+        }
+        return false;
+    }
+</script>
+<script type="text/javascript">
+
+    //$(document).ready(function(){
+        var html = "";
+        var full_width = $(window).width();
+        if(full_width<=768){
+            $(".box_skitter").show();
+            $(".slider").hide();
+            //html = $("#slider_tmep2").html();
+            //$(".banner").html(html);
+            $('.box_skitter_large').skitter({
+                theme: 'clean',
+                dots: true,
+                animation:'cubeStop',
+                numbers:false,
+                interval:4000
+            });
+            var skitter_right_box_width = $(".right_box").width();// Page width
+            var skitter_width = $(".box_skitter_large").width();// Original slider width
+            var skitter_height = $(".box_skitter_large").height();// Original slider height
+            var skitter_whb = skitter_width / skitter_height ;//(2:1)
+            var skitter_bl = skitter_right_box_width / skitter_width ;//
+            var skitter_left = (skitter_width-skitter_bl * skitter_width)/2;//
+            var skitter_top = (skitter_height-skitter_height * skitter_bl)/2;//
+            var skitter_bottom = skitter_top ;//
+            $(".box_skitter_large").css({"transform":"scale("+skitter_bl+")","margin-left":"-"+skitter_left+"px","margin-top":"-"+(skitter_top-4)+"px","margin-bottom":"-"+skitter_bottom +"px"});
+            
+        }else{
+            $(".box_skitter").hide();
+            $(".slider").show();
+            //html = $("#slider_tmep1").html();
+            //$(".banner").html(html);
+            $("#slider").divas({
+                mainImageWidth: "83%",
+                slideTransitionClass: "divas-slide-transition-left",
+                titleTransitionClass: "divas-title-transition-left",
+                titleTransitionParameter: "left",
+                titleTransitionStartValue: "-999px",
+                titleTransitionStopValue: "0px",
+                wingsOverlayColor: "rgba(0,0,0,0.6)",
+                slideInterval:4000
+            });
+            
+            setInterval(function(){
+                $(".divas-next").click();
+            },4000);
+        }
+    //});
+</script>
+<script>
+    
+    var links = $(".fastlink_temp").html();
+    $(".fastlink").html(links );
+
+    function setHeaderWidth(){
+        var container_width = $(".container").width();
+        var window_width = $(window).width();
+        var right_width = (window_width - container_width - 30  )/2;
+        right_width = right_width <0 ?0:right_width;
+    
+        var main_width = $(".right_box").width();
+        $(".header").css("width",main_width+1 +"px");
+        
+        var header_inner_height = $(".header").innerHeight()-3;
+        $(".header2").css({"height":header_inner_height +"px","line-height":header_inner_height +"px"});
+        
+        var logo_height = $(".logo").innerHeight();  
+        var mtabr_height = $(".mtab").innerHeight();
+        
+        var header_padding_top = (header_inner_height - $(".header").height())/2;
+       
+         $(".menubar").css({"top":(logo_height/2)-(mtabr_height/2)+header_padding_top +"px","right":right_width +"px"});
+  
+ 
+    }
+    setHeaderWidth();
+    
+    //
+    $(window).resize(function(){
+        setHeaderWidth();
+    });
+</script>
+<script>
+    var window_width = $(window).width();
+    if(window_width>768){
+        $("img.s").addClass("lbt");
+    }else{
+        $("img.s").removeClass("lbt");
+    }
+</script>
+<script type="text/javascript">
+        
+        function getQueryString(name) {
+            var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                return unescape(r[2]);
+            }
+            return null;
+        }
+        
+        $(function(){
+            //
+            var maodian = getQueryString("md");
+            if(maodian!=null){
+                 var header_height = $(".header").innerHeight();
+                 $('html,body').animate({scrollTop:$("#"+maodian).offset().top-header_height});
+            }
+        });
+    
+        //
+        $('.top-nav-box .menu li a, .side-menu-box .menu li a').click(function(){
+            var c_this = $(this);
+            var o = c_this.attr("data-id");
+            var header_height = $(".header").innerHeight();
+            $('html,body').animate({scrollTop:$("#"+o).offset().top-header_height}, 300,function(){
+                $(".mask").click();
+            });
+            
+           $('.top-nav-box .menu li a, .side-menu-box .menu li a').removeClass("active");
+            c_this.addClass("active");
+        });
+        
+        //
+        function twhy(){
+            var window_width = $(window).width();
+            if(window_width <= 414){
+                $(".news li .content").each(function(i,d){
+                    var c_this = $(d);
+                    if(c_this.find("img.hrxg").length>0) return;
+                    var src = c_this.find(".pic img").attr("src");
+                    c_this.find(".cn p:eq(0)").prepend("<img class='hrxg' src='"+src+"' style='float:left;width: 37%;margin-right:15px;border: 1px solid #eee;'/>");
+                });
+
+            }
+        }
+        twhy();
+
+        //
+        $(window).resize(function(){
+            twhy();
+        });
+       
+        $(window).scroll(function(){
+        
+            var scrollTop = $(window).scrollTop();
+            var alist = $("a[data-id]");
+            if(scrollTop==0){
+                alist.removeClass("active");
+                $("a[data-id=Introduction]").addClass("active");
+                return;
+            }
+            
+            var tags = $(".right_box .text-box .tb_title");        
+            $.each(tags, function(i,tag){
+                var tagtop = $(tag).offset().top;
+                var c1 = scrollTop - tagtop;    
+        
+                if( c1 > -700 ){
+                    var parent = $(tag).parent();
+                    var id = parent.attr("id");
+                    
+                    alist.removeClass("active");
+                    $("a[data-id="+id+"]").addClass("active");
+                }
+            });
+        
+        });
+        
+        $(function(){
+            var scrollTop = $(window).scrollTop();
+            if(scrollTop == 0){
+                $("a[data-id]").removeClass("active");
+                $("a[data-id=Introduction]").addClass("active");
+            }
+        });
+        
+        
+        $(function(){
+        $(".layer-con .txt a").click(function(){
+          $(".layer-con-box").hide()
+        });
+        });
+        
+       
+    </script>
+<script type="text/javascript">
+
+    //
+    
+    // Keep the slide-out drawer below the currently visible top header.
+    function syncSideMenuPosition(){
+        var headerHeight = 0;
+
+        var newHeader = $(".new-header:visible");
+        if(newHeader.length){
+            headerHeight = newHeader.outerHeight() || 0;
+        }
+
+        // Fallback for layouts where .new-header is not visible.
+        if(headerHeight <= 0){
+            var innerHeader = $(".header:visible");
+            if(innerHeader.length){
+                headerHeight = innerHeader.outerHeight() || 0;
+            }
+        }
+
+        // If no top header is visible, the drawer may start from the top.
+        document.documentElement.style.setProperty(
+            "--latm-header-height",
+            Math.max(0, Math.round(headerHeight)) + "px"
+        );
+    }
+
+    //
+    $(".mask").click(function(){
+        $(".side-menu-box").addClass("hides").removeClass("show");
+        $(".mask").hide();
+        $(".searchbox").hide();
+    });
+
+    //
+    $(".mtab").click(function(){
+        syncSideMenuPosition();
+
+        var sideMenu = $(".side-menu-box");
+
+        if(sideMenu.hasClass("show")){
+            $(".mask").hide();
+            sideMenu.addClass("hides").removeClass("show");
+        }else{
+            $(".mask").show();
+            sideMenu.addClass("show").removeClass("hides");
+        }
+    });
+
+    //
+    $("body").on("click",".rolltop",function(){
+        $('html,body').animate({scrollTop: '0px'}, 800);
+    });
+
+    //
+    function menuauto(){
+        /* Only the slide-out drawer gets automatic row heights.
+           The available height excludes the visible top navigation. */
+        syncSideMenuPosition();
+
+        var sideMenu = $(".side-menu-box");
+        var sideMenuHeight = sideMenu.innerHeight() || $(window).height();
+        var groupHeight = sideMenu.find(".group").outerHeight() || 0;
+
+        var items = sideMenu.find(".menu li:visible");
+        var menuCount = items.length;
+
+        sideMenu.find(".menu li a").css({"height":"","line-height":""});
+
+        if($(window).height() < 900 && menuCount > 0){
+            var availableHeight = Math.max(0, sideMenuHeight - groupHeight);
+            var ave = Math.floor(availableHeight / menuCount);
+
+            // Keep rows readable even on unusually short viewports.
+            ave = Math.max(58, ave);
+
+            items.find("a").css({
+                "height": ave + "px",
+                "line-height": ave + "px"
+            });
+        }
+
+        $(".top-nav-box .menu, .side-menu-box .menu").show();
+    }
+    menuauto();
+
+    //
+    $(window).resize(function(){
+        setTopNavBody();
+        setSideMenuBody();
+        syncSideMenuPosition();
+        menuauto();
+    });
+    
+     $(document).ready(function() {
+        var scrollPos1 = $(window).scrollTop();
+        var hHeight1 = $(".new-header").height();
+        if (scrollPos1 >= hHeight1 ) {
+            $(".new-header").addClass("fixed");
+        } else {
+            $(".new-header").removeClass("fixed");
+        }
+
+        syncSideMenuPosition();
+
+        $(window).scroll(function() {
+            var scrollPos = $(window).scrollTop();
+            var hHeight = $(".new-header").height();
+            if (scrollPos >= 590) {
+                $(".new-header").addClass("fixed");
+            } else {
+                $(".new-header").removeClass("fixed");
+            }
+
+            syncSideMenuPosition();
+        });
+    });
+
+</script>
+</body>
+</html>
