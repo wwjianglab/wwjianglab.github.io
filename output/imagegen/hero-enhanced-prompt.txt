@@ -1,0 +1,12 @@
+Tool: built-in image_gen.imagegen
+Reference: original website banner PNG extracted from images/new-banner.svg
+Actual output: 1672 x 941 PNG. Requested 3840 x 2160 was not provided by the tool.
+
+Use case: identity-preserve / high-resolution restoration.
+Asset type: desktop website hero background, landscape 16:9, desired output 3840 x 2160 pixels if supported, maximum available native resolution.
+Input image 1 is the existing website background and is the edit target.
+Primary request: create a significantly sharper, richly detailed high-resolution reconstruction of this exact image. Preserve the existing composition, character identity and pose, proportions, colors, and quiet gray background. This is an image quality improvement, not a redesign.
+Subject: the same Lich King seated on the same icy spiked throne at the far left, face hidden within the angular crowned helmet, skull shoulder armor, both armored hands and resting posture, glowing blue runic sword vertically in front, icy skulls at the base. Faithfully preserve the recognisable armor and silhouette.
+Composition invariants: figure and throne stay within the leftmost approximately 34% of the wide canvas; their top starts around 15% from the top; throne base ends around 95% of the height. Keep the central and right two thirds completely empty with a smooth neutral dark gray #606060 background for HTML text overlay. Keep the same gentle blending from frosty base to gray backdrop. No enlarging or recentering the subject.
+Quality: resolve intricate engraved steel, clean helmet edges, fine frost crystals, translucent sharp icicles, layered armor, readable individual chain links, detailed skulls and glowing runes. Crisp controlled edges, natural fine surface detail, restrained cyan highlights. Avoid blur, painterly smudging, waxy surfaces, artificial sharpening halos, noise, new objects, extra characters, any words, typography, symbols, logos, borders or watermarks. Keep original subject and framing.
+Critical targeted revision: the previous result was only 1672 x 941 pixels. Increase the actual output canvas pixel resolution to 3840 x 2160 (4K), rather than preserving the input image pixel dimensions. Return a genuinely larger pixel raster. Keep all composition and framing unchanged and reconstruct small details at the higher native resolution. Do not simply resize the old bitmap.
